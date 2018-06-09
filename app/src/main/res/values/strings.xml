@@ -3,9 +3,11 @@
     <string name="logo_name">vezoava</string>
     <string name="tag_line">The fork and spoon love story...</string>
     <string name="intro">Our restaurant prides itself on its menu being green, fresh, organic, with the food being prepared in a simple manner in order to satisfy our customers’ heart and soul.</string>
-    <string name="location">103, Baker Street Puducherry India</string>
+    <string name="location">103, Baker Street Puducherry, India</string>
     <string name="contact">866-396-5421</string>
     <string name="website">www.vezoava.com</string>
     <string name="email">vezoava@gmail.com</string>
+    <string name="rate">RATE US - </string>
+    <string name="submit">submit </string>
 </resources>
 

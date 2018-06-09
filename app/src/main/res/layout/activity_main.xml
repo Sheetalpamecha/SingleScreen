@@ -34,11 +34,17 @@
             android:textSize="@dimen/twenty_dps"
             android:textStyle="bold" />
 
+        <ImageView
+            android:id="@+id/gallery"
+            style="@style/wrap_content"
+            android:src="@drawable/"
+            android:layout_below="@id/tag"
+            android:scaleType="centerCrop"/>
 
         <TextView
             android:id="@+id/text"
             style="@style/wrap_content"
-            android:layout_below="@id/tag"
+            android:layout_below="@id/gallery"
             android:layout_marginBottom="50dp"
             android:layout_marginLeft="@dimen/ten_dps"
             android:layout_marginRight="@dimen/ten_dps"
@@ -67,8 +73,7 @@
             android:typeface="sans"
             android:text="@string/location"
             android:textColor="@color/white"
-            android:textSize="@dimen/twenty_sps"
-            android:textStyle="bold" />
+            android:textSize="@dimen/twenty_sps" />
 
         <ImageView
             android:id="@+id/call"
@@ -90,7 +95,8 @@
             android:textSize="@dimen/twenty_sps"
             android:textStyle="bold"
             android:autoLink="all"
-            android:linksClickable="true"/>
+            android:linksClickable="true"
+            android:textColorLink="@color/white"/>
 
         <ImageView
             android:id="@+id/web"
@@ -120,6 +126,7 @@
             style="@style/small_icons"
             android:layout_below="@id/web"
             android:layout_marginLeft="@dimen/ten_dps"
+            android:layout_marginBottom="@dimen/twenty_dps"
             android:src="@drawable/google_img" />
 
         <TextView
@@ -133,17 +140,48 @@
             android:textSize="@dimen/twenty_sps"
             android:textStyle="bold"
             android:autoLink="all"
-            android:linksClickable="true"/>
+            android:linksClickable="true"
+            android:textColorLink="@color/white"
+            android:layout_marginBottom="@dimen/thirty_dps"/>
+
+        <TextView
+            android:id="@+id/rating"
+            style="@style/wrap_content"
+            android:layout_below="@id/mail"
+            android:text="@string/rate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty_sps"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/ten_dps"
+            android:layout_marginBottom="@dimen/twenty_dps"
+            />
 
         <RatingBar
             android:id="@+id/rating_bar"
             style="?android:attr/ratingBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/mail"
+            android:layout_below="@id/rating"
             android:numStars="5"
             android:rating="4.5"
-            android:stepSize="0.5" />
+            android:stepSize="0.5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/seventy_dps"
+            android:progressTint="@color/white"/>
+
+        <TextView
+            android:id="@+id/order_summary_text_view"
+            style="@style/wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            style="@style/wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/thirty_dps"
+            android:text="@string/submit" />
 
     </RelativeLayout>
 </ScrollView>
