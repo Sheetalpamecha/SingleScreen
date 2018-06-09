@@ -4,6 +4,7 @@
     <dimen name="thirty_dps">30dp</dimen>
     <dimen name="twenty_dps">20dp</dimen>
     <dimen name="seventy_dps">70dp</dimen>
+    <dimen name="fifty_dps">50dp</dimen>
     <dimen name="twenty_sps">20sp</dimen>
     <dimen name="ten_sps">10sp</dimen>
     <dimen name="fifty_six_sps">56sp</dimen>

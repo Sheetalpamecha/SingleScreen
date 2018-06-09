@@ -32,23 +32,26 @@
             android:text="@string/tag_line"
             android:textColor="@color/white"
             android:textSize="@dimen/twenty_dps"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/thirty_dps"/>
 
         <ImageView
             android:id="@+id/gallery"
             style="@style/wrap_content"
-            android:src="@drawable/"
+            android:src="@drawable/collage"
+            android:scaleType="fitCenter"
             android:layout_below="@id/tag"
-            android:scaleType="centerCrop"/>
+            android:layout_centerHorizontal="true"
+            />
 
         <TextView
             android:id="@+id/text"
             style="@style/wrap_content"
             android:layout_below="@id/gallery"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="@dimen/fifty_dps"
             android:layout_marginLeft="@dimen/ten_dps"
             android:layout_marginRight="@dimen/ten_dps"
-            android:layout_marginTop="@dimen/seventy_dps"
+            android:layout_marginTop="@dimen/fifty_dps"
             android:typeface="sans"
             android:gravity="center"
             android:text="@string/intro"
